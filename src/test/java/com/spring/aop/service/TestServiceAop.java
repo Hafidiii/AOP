@@ -21,4 +21,10 @@ public class TestServiceAop {
         long res = testService.sum(4,1);
         System.out.println("METHOD CALL --> " + res);
     }
+
+    @Test
+    public void invokeAOPMultiply() {
+        long res = testService.multiply(2L,3L);
+        System.out.println("METHOD CALL --> " + res);
+    }
 }

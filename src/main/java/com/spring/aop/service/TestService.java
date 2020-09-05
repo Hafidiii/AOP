@@ -1,5 +1,6 @@
 package com.spring.aop.service;
 
+import com.spring.aop.aspect.Loggable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,6 +14,7 @@ public class TestService {
         return a/b;
     }
 
+    @Loggable
     public Long multiply(Long a, Long b){
         return a*b;
     }

@@ -74,7 +74,7 @@ public class TestAspect {
     }
 
     //Pointcut to execute on all the methods of classes in a package
-    @Pointcut("execution(* com.spring.aop.service.TestService.*(..))")
+    @Pointcut("execution(* com.spring.aop.service.TestService.sum(..))")
     public void pointCut(){}
 
     //Pointcut to to apply the advice to all the methods in the class
